@@ -1,0 +1,59 @@
+function press(){
+	$(".list_id").each(function(index,element){
+		$(this).html(index+1);
+	})
+	$("#addPress").dialog({
+		autoOpen: false,
+		width: 600,
+		modal: true
+	});
+	$("#editPress").dialog({
+		autoOpen: false,
+		width: 600,
+		modal: true
+	});
+	$("#deletePress").dialog({
+		autoOpen: false,
+		width: 600,
+		modal: true
+	});
+	$('.icon-1').live('click',function(){
+		$("#addPress").dialog('open');
+	})
+	$('.icon-5:not(.disabled)').live('click',function(){
+		var selector = $('.cell_tb_list tr.cur');
+		$('#editPress .input_id').val(selector.find('td:eq(1) span').html().trim());
+		$('#editPress .textarea_content').html(selector.find('td:eq(4)').attr('title').trim());
+		$('#editPress .textarea_description').html(selector.find('td:eq(5)').attr('title').trim());
+		$("#editPress").dialog('open');
+	})
+	$('.icon-2:not(.disabled)').live('click',function(){
+		var delete_num = $('.cell_tb_list tr.cur:not(.table_header)').length;
+		$('#deletePress .delete_num').html(delete_num);	
+		$("#deletePress").dialog('open');
+	})
+	$('#deletePress .submit_btn').live('click',function(){
+		var str='';
+		$('.cell_tb_list tr.cur:not(.table_header)').each(function(){
+			str = str+' '+$(this).find('td:eq(1) span').html().trim();
+		})	
+		var json = JSON.stringify({"id":str.trim()});
+		if(str!=='')
+		{	
+			$.ajax({
+					type:'POST',
+					url:'/admin/Press_delete',
+					data:json,
+					dataType:'json',
+					contentType:'application/json; charset=UTF-8',
+					success:function(data){
+						location.href = location.href;			
+					}
+			})
+		}
+		else{
+			alert('请选择删除的的内容！');
+		}
+		
+	})
+}

@@ -1,0 +1,278 @@
+/*==================================================
+公共样式
+==================================================*/
+body
+{
+	margin: 0px;
+	font-size: 12px;
+	font-family: 'Myriad Pro','Helvetica',arial,sans-serif;
+	line-height: 22px;
+	cursor: default;
+	color:#44433e;
+}
+
+*
+{
+	background-repeat: no-repeat;
+	margin:0px;
+	padding:0px;
+}
+@font-face {
+   font-family: Myriad Pro;
+   src: url('font/MyriadPro-Regular.otf') format('opentype');
+}
+@font-face {
+   font-family: Myriad Pro Cond;
+   src: url('font/MyriadPro-Cond.otf') format('opentype');
+}
+@font-face {
+   font-family: Myriad Pro Bold;
+   src: url('font/MyriadPro-Bold.otf') format('opentype');
+}
+.blockLink a, .noHideBlockLink a
+{
+	display: block;
+	height: 100%;
+	overflow: hidden;
+	text-indent: -99999px;
+}
+
+.blockTextLink a, .noHideBlockTextLink a
+{
+	display: block;
+	height: 100%;
+	text-align: center;
+}
+
+a
+{
+	text-decoration: none;
+	outline:none;
+}
+
+a span
+{
+	cursor: pointer;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+dd
+{
+	margin-left: 0;
+}
+
+table
+{
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+td
+{
+	vertical-align: top;
+}
+
+.hide
+{
+	display: none;
+}
+
+.strong
+{
+	font-weight: bold;
+}
+
+.clear
+{
+	clear: both;
+	height: 0;
+	overflow: hidden;
+}
+
+.clearfix:after
+{
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+.clearfix
+{
+	_display: inline-block;
+	zoom:1;
+}
+
+
+.hideText
+{
+	text-indent: -99999px;
+	overflow: hidden;
+}
+
+img
+{
+	border-width: 0;
+	padding:0px;
+	margin:0px;
+}
+
+.HorizontalScroll .wrapper
+{
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+
+.HorizontalScroll .wrapper ul
+{
+	width: 10000px;
+	height: 100%;
+}
+
+.HorizontalScroll .wrapper ul li
+{
+	float: left;
+}
+.left{
+	float:left;
+}
+.right{
+	float:right;
+}
+.font12{
+	font-size:10px;
+}
+.font14{
+	font-size:12px;
+}
+.font16{
+	font-size:14px;
+}
+.font19{
+	font-size:16px;
+}
+.font18{
+	font-size:15px;
+}
+.font20{
+	font-size:16px;
+}
+.font22{
+	font-size:20px;
+}
+.font24{
+	font-size:18px;
+}
+.font30{
+	font-size:30px;
+}
+.font40{
+	font-size:40px;
+}
+.mt5{
+	margin-top:3px;
+}
+.mt10{
+	margin-top:10px;
+}
+.mt15{
+	margin-top:15px;
+}
+.mt20{
+	margin-top:20px;
+}
+.mt30{
+	margin-top:30px;
+}
+.mt40{
+	margin-top:40px;
+}
+.mt50{
+	margin-top:50px;
+}
+.gray{
+	color:#666;
+}
+.white{
+	color:#fff;
+}
+.black{
+	color:#101010;
+}
+.red{
+	color:#f16951;
+}
+.lineHeight16{
+	line-height:16px;
+}
+.lineHeight18{
+	line-height:18px;
+}
+.lineHeight22{
+	line-height:20px;
+}
+.lineHeight26{
+	line-height:26px;
+}
+.lineHeight30{
+	line-height:30px;
+}
+.lineHeight35{
+	line-height:35px;
+}
+.lineHeight40{
+	line-height:40px;
+}
+.family_bold{
+	font-family: 'Myriad Pro Bold','Helvetica',arial,sans-serif;
+}
+.family_cond{
+	font-family: 'Myriad Pro Cond','Helvetica',arial,sans-serif;
+}
+.family_normal{
+	font-family: 'Myriad Pro','Helvetica',arial,sans-serif;
+}
+.fontItalic{
+	font-style:italic;	
+}
+.fontnormal{
+	font-style:normal;	
+}
+.positionRelative{
+	position:relative;
+}
+.positionAbsolute{
+	position:absolute;
+}
+.cursor{
+	cursor:pointer;
+}
+.marginLeft10{
+	margin-left:10px;
+}
+.marginLeft20{
+	margin-left:20px;
+}
+.bgGray{
+	background-color:#dcdddf;
+}
+.textShadowBlack{
+	text-shadow: 1px 1px 1px #000;
+}
+.bottom_line{
+	border-bottom:1px solid #fff;
+}
+.bottom_line_gray{
+	border-bottom:1px solid #ccc;
+	padding-bottom:10px;
+}
+.displayBlock{
+	display:block;
+}
+a,a:hover{color:#44433E;}
